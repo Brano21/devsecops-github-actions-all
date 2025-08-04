@@ -30,7 +30,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: RunSnyk to check for vulnerabilities
+      - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/maven@v0.4.0
         continue-on-error: true
         env:
